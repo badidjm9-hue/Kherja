@@ -1,0 +1,36 @@
+import type { Locale } from '@/services/accountService';
+const fr = {
+  tagline: 'Move Smart · Travel Easy', travel: 'Voyagez en toute confiance', travelSub: 'Rapide · Sûr · Partout en Algérie',
+  start: 'Commencer', skip: 'Passer', next: 'Continuer', welcome: 'Bienvenue sur KHERJA', choose: 'Choisissez votre profil',
+  passenger: 'Passager', passengerSub: 'Réserver une course', driver: 'Chauffeur', driverSub: 'Accepter des courses',
+  login: 'Connexion', loginSub: 'Bon retour parmi nous', register: 'Créer un compte', registerSub: 'Rejoignez KHERJA',
+  name: 'Nom complet', phone: 'Téléphone', password: 'Mot de passe', confirm: 'Confirmer le mot de passe',
+  signIn: 'Se connecter', signUp: 'S’inscrire', already: 'Déjà un compte ?', noAccount: 'Nouveau sur KHERJA ?',
+  otpTitle: 'Vérifiez votre téléphone', otpSub: 'Saisissez le code reçu par SMS.', code: 'Code de vérification', verify: 'Vérifier', resend: 'Renvoyer le code',
+  phoneError: 'Saisissez un numéro mobile algérien valide.', nameError: 'Saisissez votre nom complet.', passError: 'Le mot de passe doit contenir au moins 6 caractères.',
+  confirmError: 'Les mots de passe ne correspondent pas.', codeError: 'Saisissez le code SMS reçu (4 à 8 chiffres).',
+  myProfile: 'Mon profil', saved: 'Profil enregistré', save: 'Enregistrer', logout: 'Se déconnecter', retry: 'Réessayer',
+  foundation: 'Fondation du compte', foundationSub: 'Votre compte est connecté. Courses, livraisons et vérification des véhicules ne sont pas encore disponibles.',
+  smsNotice: 'Authentification réelle. L’envoi de SMS nécessite un fournisseur configuré dans OnSpace Cloud. Aucun code de démonstration.',
+  verificationNotice: 'Le profil chauffeur ne donne aucun accès aux courses avant la validation des documents.',
+  citySlide: 'Votre ville, plus proche', citySlideSub: 'Des trajets et livraisons réunis dans KHERJA.',
+  safeSlide: 'Avancez sereinement', safeSlideSub: 'La mobilité pensée pour votre quotidien.', back: 'Retour', sent: 'Code SMS demandé',
+};
+const ar: typeof fr = {
+  tagline: 'تنقّل بذكاء · سافر بسهولة', travel: 'تنقّل بكل ثقة', travelSub: 'سريع · آمن · في أنحاء الجزائر',
+  start: 'ابدأ', skip: 'تخطي', next: 'متابعة', welcome: 'مرحباً بك في KHERJA', choose: 'اختر نوع حسابك',
+  passenger: 'راكب', passengerSub: 'حجز رحلة', driver: 'سائق', driverSub: 'استقبال طلبات الرحلات',
+  login: 'تسجيل الدخول', loginSub: 'مرحباً بعودتك', register: 'إنشاء حساب', registerSub: 'انضم إلى KHERJA',
+  name: 'الاسم الكامل', phone: 'رقم الهاتف', password: 'كلمة المرور', confirm: 'تأكيد كلمة المرور',
+  signIn: 'تسجيل الدخول', signUp: 'إنشاء الحساب', already: 'لديك حساب؟', noAccount: 'جديد في KHERJA؟',
+  otpTitle: 'تأكيد رقم الهاتف', otpSub: 'أدخل الرمز الذي وصلك عبر رسالة نصية.', code: 'رمز التحقق', verify: 'تأكيد', resend: 'إعادة إرسال الرمز',
+  phoneError: 'أدخل رقم هاتف جزائري صحيحاً.', nameError: 'أدخل اسمك الكامل.', passError: 'يجب أن تتكون كلمة المرور من 6 أحرف على الأقل.',
+  confirmError: 'كلمتا المرور غير متطابقتين.', codeError: 'أدخل رمز الرسالة من 4 إلى 8 أرقام.',
+  myProfile: 'ملفي الشخصي', saved: 'تم حفظ الملف', save: 'حفظ', logout: 'تسجيل الخروج', retry: 'إعادة المحاولة',
+  foundation: 'تأسيس الحساب', foundationSub: 'حسابك متصل. الرحلات والتوصيل والتحقق من المركبات غير متاحة بعد.',
+  smsNotice: 'مصادقة حقيقية. إرسال الرسائل يتطلب مزوداً مهيأً في OnSpace Cloud. لا توجد رموز تجريبية.',
+  verificationNotice: 'حساب السائق لا يسمح باستقبال الطلبات قبل اعتماد المستندات.',
+  citySlide: 'مدينتك أقرب إليك', citySlideSub: 'الرحلات والتوصيل في تطبيق KHERJA.',
+  safeSlide: 'تنقّل براحة', safeSlideSub: 'تنقّل يناسب حياتك اليومية.', back: 'رجوع', sent: 'تم طلب رمز التحقق',
+};
+export function getStrings(locale: Locale) { return locale === 'ar' ? ar : fr; }
